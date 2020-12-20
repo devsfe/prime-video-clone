@@ -1,1 +1,1 @@
-body{background-color:#0F171E}
+*{margin:0;padding:0;box-sizing:border-box}body{background-color:#0F171E;font-family:'Arial';list-style:none;text-decoration:none}header{background-color:#1A242F;width:100%}header .nav{padding:20px 40px}header .nav__logo{width:120px;height:35px}
