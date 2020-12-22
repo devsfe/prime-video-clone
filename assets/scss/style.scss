@@ -11,17 +11,111 @@ body {
     text-decoration: none;
 }
 
+/*** UTILIDADES ***/
+.container {
+    max-width: 95%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 /*** NAV ***/
 header {
     background-color: #1A242F;
+    position: fixed;
     width: 100%;
+    z-index: 9;
     
     .nav{
-        padding: 20px 40px;
+        padding: 18px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__right {
+            display: flex;
+            align-items: center;
+        }
     
         &__logo {
-            width: 120px;
+            width: 110px;
             height: 35px;
+            margin: 0 20px 0 0;
+        }
+
+        &__list {
+            display: flex;
+            list-style: none;
+        }
+
+        &__item {
+            margin: 0 15px 0 0;
+        }
+
+        &__link {
+            color: rgba(242,244,246,.9);;
+            text-decoration: none;
+        }
+
+        &__left {
+            display: flex;
+        }
+
+        &__input {
+            background-color: transparent;
+            background-image: url(/images/search-icon.png);
+            background-size: 13%;
+            background-repeat: no-repeat;
+            background-position: left;
+            border: 1px solid #627481;
+            display: block;
+            height: 38px;
+            width: 230px;
+            margin: 0 15px 0 0;
+        }
+
+        &__login {
+            display: flex;
+            align-items: center;
+        }
+
+        &__user {
+            width: 30px;
+            height: 30px;
+            align-self: center;
+            border-radius: 60px;
+            margin: 0 5px 0 0;
+        }
+
+        &__name {
+            color: rgba(242,244,246,.7);
+            font-size: 15px;
         }
     }
 }
+
+/*** BANNER ***/
+.banner {
+    padding: 73px 0 30px 0;
+
+    &__img {
+        height: 100%;
+        object-fit: cover;    
+    }
+}
+
+/*** MOVIES ***/
+.movies {
+
+    &__title {
+        font-weight: 700;
+        font-size: 19px;
+        color: #fff;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+
+    &__img {
+        margin: 0 10px 0 0;
+    }
+}
+
